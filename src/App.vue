@@ -1,12 +1,21 @@
 <template>
     <div>
-        JAShaikh was here!
+        <SearchBar onInput="onInput"></SearchBar>
     </div>
 </template>
 
 <script>
+    import SearchBar from './components/SearchBar';
     export default {
-        name: 'App'
-    };
+        name: 'App',
+        components: {
+            SearchBar
+        },
+        methods: {
+            onInput: function (event) {
+                console.log(event.target.value);
+            }
+        }
+    }
 </script>
 
