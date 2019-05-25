@@ -1,5 +1,5 @@
 <template>
-    <div> 
+    <div id="searchBoxDiv"> 
         <input @input = "onInput" type="text" name="search-bar" id="searchBar">
     </div>
 </template>
@@ -11,6 +11,9 @@
 </script>
 
 <style>
+    #searchBoxDiv{
+        text-align: center;    
+    }
     #searchBar{
         height: 40px;
         width: 50%;
